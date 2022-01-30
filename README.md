@@ -44,6 +44,18 @@ export default TestComponent;
 
 ```
 
+
+| Prop  | Required	  | Description |
+| :------------ |:---------------:| :---------------------------------------------------------|
+| `darkMode`     | ✓ | Set the default theme to dark mode |
+| `ref`      | ✓ | Ref to the input which emojies will be added in |
+| `visibility `     | ✓ | The visibility of the picker  |
+| `setVisibility`  | ✓ | Toggle the picker |
+| `top` |  | Set the top position of the picker  |
+| `right`      |  | Set the right position of the picker  |
+| `left`      |  |   Set the left position of the picker  |
+| `bottom` |  | Set the bottom position of the picker  |
+
 <!--
 > This TSDX setup is meant for developing React component libraries (not apps!) that can be published to NPM. If you’re looking to build a React-based app, you should use `create-react-app`, `razzle`, `nextjs`, `gatsby`, or `react-static`.
 
