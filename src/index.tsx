@@ -28,6 +28,7 @@ const AmazingEmojiPicker = React.forwardRef(
   ) => {
     const pickEmoji = (emoji: any) => {
       ref.current.value += emoji.target.innerText;
+      onSaveEmojiInHistory(emoji.target.innerText);
     };
 
     const [collection, setCollection] = useState<string[]>(faces);
@@ -38,7 +39,30 @@ const AmazingEmojiPicker = React.forwardRef(
       setCollectionTitle(title);
     };
 
-    // const [ll, l] = useState<boolean>(true);
+    const onSaveEmojiInHistory = (emoji: string) => {
+      if (typeof window !== undefined) {
+        if (!localStorage.getItem('amazingEmojis')) {
+          localStorage.setItem('amazingEmojis', JSON.stringify([emoji]));
+          return;
+        }
+
+        const amazingEmojisArr = JSON.parse(
+          localStorage.getItem('amazingEmojis') || ''
+        );
+
+        if (amazingEmojisArr.indexOf(emoji) !== -1) {
+          amazingEmojisArr.splice(amazingEmojisArr.indexOf(emoji), 1);
+        }
+
+        amazingEmojisArr.unshift(emoji);
+
+        if (amazingEmojisArr.length > 60) {
+          amazingEmojisArr.pop();
+        }
+
+        localStorage.setItem('amazingEmojis', JSON.stringify(amazingEmojisArr));
+      }
+    };
 
     return (
       visibility && (
@@ -62,6 +86,20 @@ const AmazingEmojiPicker = React.forwardRef(
           >
             <div className={styles.header}>
               <ul>
+                <li
+                  onClick={() =>
+                    onChooseCollection(
+                      JSON.parse(
+                        localStorage.getItem('amazingEmojis') ||
+                          JSON.stringify([])
+                      ),
+                      'History'
+                    )
+                  }
+                  className={collectionTitle === 'History' ? styles.active : ''}
+                >
+                  🕥
+                </li>
                 <li
                   onClick={() => onChooseCollection(faces, 'Faces')}
                   className={collectionTitle === 'Faces' ? styles.active : ''}
