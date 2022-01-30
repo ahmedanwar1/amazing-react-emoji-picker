@@ -62,10 +62,10 @@ export default TestComponent;
 | `ref`           |    ✓     | Ref of the input which emojis will be added in. (`useRef`) |
 | `visibility`    |    ✓     | The initail visibility of the picker.                      |
 | `setVisibility` |    ✓     | Toggle the picker by the set function of `useState`.       |
-| `top`           |          | Set the top position of the picker.                        |
-| `right`         |          | Set the right position of the picker.                      |
-| `left`          |          | Set the left position of the picker.                       |
-| `bottom`        |          | Set the bottom position of the picker.                     |
+| `top`           |    -     | Set the top position of the picker.                        |
+| `right`         |    -     | Set the right position of the picker.                      |
+| `left`          |    -     | Set the left position of the picker.                       |
+| `bottom`        |    -     | Set the bottom position of the picker.                     |
 
 ## License
 
