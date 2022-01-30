@@ -4,9 +4,16 @@ An amazing react emoji picker with more than 500 emojis included in the package.
 
 <img src="./emojipickercover.png" width="800"/>
 
+<br />
+
 ## Install
 
-`npm i amazing-react-emojipicker`
+
+```console
+npm i amazing-react-emojipicker
+```
+
+<br />
 
 ## Usage basic
 
@@ -44,22 +51,20 @@ export default TestComponent;
 
 ```
 
+<br />
+
+## Props details
 
 | Prop  | Required	  | Description |
 | :------------ |:---------------:| :---------------------------------------------------------|
-| `darkMode`     | ✓ | Set the default theme to dark mode |
-| `ref`      | ✓ | Ref to the input which emojies will be added in |
-| `visibility `     | ✓ | The visibility of the picker  |
-| `setVisibility`  | ✓ | Toggle the picker |
-| `top` |  | Set the top position of the picker  |
-| `right`      |  | Set the right position of the picker  |
-| `left`      |  |   Set the left position of the picker  |
-| `bottom` |  | Set the bottom position of the picker  |
+| `darkMode`     | ✓ | Set the default theme to dark mode. |
+| `ref`      | ✓ | Ref of the input which emojis will be added in. (`useRef`) |
+| `visibility `     | ✓ | The initail visibility of the picker.  |
+| `setVisibility`  | ✓ | Toggle the picker by the set function of `useState`. |
+| `top` |  | Set the top position of the picker.  |
+| `right`      |  | Set the right position of the picker.  |
+| `left`      |  |   Set the left position of the picker.  |
+| `bottom` |  | Set the bottom position of the picker.  |
 
-<!--
-> This TSDX setup is meant for developing React component libraries (not apps!) that can be published to NPM. If you’re looking to build a React-based app, you should use `create-react-app`, `razzle`, `nextjs`, `gatsby`, or `react-static`.
-
-> If you’re new to TypeScript and React, checkout [this handy cheatsheet](https://github.com/sw-yx/react-typescript-cheatsheet/)
-
-## Commands
--->
+## License
+[MIT](./LICENSE)
