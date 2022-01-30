@@ -1,5 +1,5 @@
 {
-  "version": "1.0.5",
+  "version": "1.1.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -7,6 +7,14 @@
     "dist",
     "src"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmedanwar1/amazing-react-emoji-picker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ahmedanwar1/amazing-react-emoji-picker/issues"
+  },
+  "homepage": "https://github.com/ahmedanwar1/amazing-react-emoji-picker#readme",
   "engines": {
     "node": ">=10"
   },

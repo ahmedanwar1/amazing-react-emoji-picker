@@ -1,6 +1,6 @@
 .AmazingEmojiPicker {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -65,24 +65,24 @@
 
 /*dark theme*/
 
-.App.dark {
+.AmazingEmojiPicker.dark {
   background-color: #000;
   color: #fff;
 }
 
-.App.dark .header ul li.active {
+.AmazingEmojiPicker.dark .header ul li.active {
   background-color: #333;
 }
 
-.App.dark .pickSection {
+.AmazingEmojiPicker.dark .pickSection {
   background: #121212;
 }
 
-.App.dark ul li:hover {
+.AmazingEmojiPicker.dark ul li:hover {
   background-color: #333;
 }
 
-.App.dark ul li:active {
+.AmazingEmojiPicker.dark ul li:active {
   background: #444;
 }
 

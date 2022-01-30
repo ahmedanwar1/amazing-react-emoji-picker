@@ -49,10 +49,10 @@ const AmazingEmojiPicker = React.forwardRef(
           ></div>
           <div
             style={{
-              top: top + 'px',
-              right: right + 'px',
-              bottom: bottom + 'px',
-              left: left + 'px',
+              top: top + (top ? 'px' : ''),
+              right: right + (right ? 'px' : ''),
+              bottom: bottom + (bottom ? 'px' : ''),
+              left: left + (left ? 'px' : ''),
             }}
             className={
               darkMode
