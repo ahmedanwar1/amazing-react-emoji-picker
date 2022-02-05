@@ -6,8 +6,6 @@ An amazing react emoji picker with more than 500 emojis included in the package.
 
 <br />
 
-<a href="https://www.buymeacoffee.com/ahmedanwar" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
-
 ## Install
 
 ```console
